@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Burger card</title>
+    <!-- Moved the link inside the head tag where it belongs -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<link rel="stylesheet" href="assets/css/style.css">
 
 <body>
     
     <main class="coupon-wrap">
         <header class="coupon-header">
             <div class="company-name"></div>
-           <h2 id="coupon-title">🍔 Hot Burger Offer</h2>
+            <h2 id="coupon-title">🍔 Hot Burger Offer</h2>
         </header>
 
         <figure class="coupon-image">
@@ -22,17 +23,21 @@
 
         <section class="coupon-body">
             <h1 class="offer-title">20% OFF YOUR PURCHASE</h1>
+            
+            <!-- Closed the paragraph properly before starting the promo block -->
             <p class="lead">
-                "This message is about a special burger offer available Near North Karachi Surjani. The price of the burger is 400 rupees, and it has a delicious taste. You need to come early to take advantage of this offer. Do you want more information or want to know
-                something specific?"
-                <div class="promo-row">
-                    <label class="promo-label">Use Promo Code:</label>
-                    <div class="promo-code">BOH232</div>
-                </div>
+                "This message is about a special burger offer available Near North Karachi Surjani. The price of the burger is 400 rupees, and it has a delicious taste. You need to come early to take advantage of this offer. Do you want more information or want to know something specific?"
+            </p>
 
-                <div class="expires">Expires: <time datetime="2021-01-03">Dec 31, 2026</time></div>
+            <div class="promo-row">
+                <label class="promo-label">Use Promo Code:</label>
+                <div class="promo-code">BOH232</div>
+            </div>
+
+            <!-- Fixed the datetime attribute to match the text -->
+            <div class="expires">Expires: <time datetime="2026-12-31">Dec 31, 2026</time></div>
         </section>
-    </main>
-</body>
+    </main> <!-- Added missing closing main tag -->
 
+</body>
 </html>
